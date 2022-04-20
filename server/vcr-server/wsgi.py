@@ -19,10 +19,11 @@ import os
 # file. This includes Django's development server, if the WSGI_APPLICATION
 # setting points here.
 from django.core.wsgi import get_wsgi_application
+from dozer import Dozer
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "vcr_server.settings")
 
-application = get_wsgi_application()
+application = Dozer(get_wsgi_application())
 
 # Apply WSGI middleware here.
 # from helloworld.wsgi import HelloWorldApplication

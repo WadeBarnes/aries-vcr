@@ -1,3 +1,6 @@
 django_nose
 black
 flake8
+
+# Memory Profiling
+Dozer
